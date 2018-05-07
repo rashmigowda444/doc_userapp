@@ -1,0 +1,83 @@
+.bg{
+    margin-top:-20px;
+        background-size: cover;
+        height:500px;
+        opacity: 0.8;
+        background: linear-gradient(rgba(85, 77, 77, 0.5), rgba(71, 69, 69, 0.5)), url('assets/images/doc.jpg');
+       padding-top:160px;
+       
+    }
+    
+    div.slide-left {
+      width:100%;
+      overflow:hidden;
+      padding-left:20px;
+    }
+    div.slide-left h1 {
+      animation: slide-left 10s;
+      font-family: 'Francois One', sans-serif;
+      font-size:60px;
+      color:#003152;
+    }
+      
+    @keyframes slide-left {
+      from {
+        margin-left: 100%;
+        width: 300%; 
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+    
+    .rowhome{
+      padding-left:30px;padding-right:30px;
+    }
+    
+    .content{
+     padding:20px;
+    }
+    .boxcontent{
+      height:310px;
+      position:relative;
+    }
+    
+    .image {
+      display: block;
+      width: 100%;
+      height:300px;
+    }
+    
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #003152;
+      overflow: hidden;
+      width: 100%;
+      height: 20%;
+      transition: .5s ease;
+    }
+    
+    .boxcontent:hover .overlay {
+      height: 40%;
+      /* background: rgba(0, 0, 0, 0.5); */
+    }
+    
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;font-family: 'Jura', sans-serif;
+    }
+    
+    .rowover{
+      padding-left:30px;padding-right:30px;
+    }
